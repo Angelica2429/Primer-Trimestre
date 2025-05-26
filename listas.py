@@ -1,17 +1,17 @@
-# print("Listas")
+print("Listas")
 
-# materia=["Sociales","algebra","trigonometria"]
-# print(materia[2])
+materia=["Sociales","algebra","trigonometria"]
+print(materia[2])
 
-# print("suma de números")
-# numero1= []
-# numero1.append(int(input("Ingrese un numero:"))),numero1.append(int(input("Ingrese un numero:")))
-# suma=numero1[0]+numero1[1]
-# print(f"El resultado es: {suma}")
+print("suma de números")
+numero1= []
+numero1.append(int(input("Ingrese un numero:"))),numero1.append(int(input("Ingrese un numero:")))
+suma=numero1[0]+numero1[1]
+print(f"El resultado es: {suma}")
 
-# materia=["Sociales","algebra","trigonometria"]
-# materia[2]="Robotica"
-# print(materia)
+materia=["Sociales","algebra","trigonometria"]
+materia[2]="Robotica"
+print(materia)
 
 can1=int(input("ingresa el número de primer contacto:"))
 can2=int(input("ingresa el número de segundo contacto:"))
