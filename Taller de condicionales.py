@@ -119,12 +119,12 @@
 # else:
 #     print("El número no es correcto")
 
-print("Ejercicio #15")
-lista5=[]
-lista5=input("Ingrese un color:"),input("Ingrese un color:"),input("Ingrese un color:").lower()
-if lista5[1]=="azul":
-    n=lista5.([1])
-    a=lista5[1].append(input("Ingrese el nuevo color:"))
-    print(f"El nueva lista actualizada quedó así:{lista5}")
-else:
-    print("No es necesario cambiar el color")
+# print("Ejercicio #15")
+# lista5=[]
+# lista5=input("Ingrese un color:"),input("Ingrese un color:"),input("Ingrese un color:").lower()
+# if lista5[1]=="azul":
+#     n=lista5.([1])
+#     a=lista5[1].append(input("Ingrese el nuevo color:"))
+#     print(f"El nueva lista actualizada quedó así:{lista5}")
+# else:
+#     print("No es necesario cambiar el color")
