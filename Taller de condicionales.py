@@ -32,15 +32,32 @@
 # else:
 #     print("El número no se encuentra en el rango")
 
-print("Ejercicio #5")
-num7=int(input("Ingrese un número:"))
-num8=int(input("Ingrese un número:"))
-num9=int(input("Ingrese un número:"))
-if num7 < num9 > num8:
-    print(f"{num9} es mayor que {num8} y {num7}")
-elif num7 < num8 > num9:
-    print(f"{num8} es mayor que {num9} y {num7}")
-elif num8 < num7 > num9:
-    print(f"{num7} es mayor que {num9} y {num8}")
+# print("Ejercicio #5")
+# num7=int(input("Ingrese un número:"))
+# num8=int(input("Ingrese un número:"))
+# num9=int(input("Ingrese un número:"))
+# if num7 < num9 > num8:
+#     print(f"{num9} es mayor que {num8} y {num7}")
+# elif num7 < num8 > num9:
+#     print(f"{num8} es mayor que {num9} y {num7}")
+# elif num8 < num7 > num9:
+#     print(f"{num7} es mayor que {num9} y {num8}")
+# else:
+#     print("No se sabe")
+print("Ejercicio #6")
+produc1=int(input("Ingrese el precio del primer producto:"))
+produc2=int(input("Ingrese el precio del segundo número:"))
+precio_total=produc1+produc2
+des=0.10/precio_total
+if precio_total >= 100:
+    des=0.10/precio_total 
+    print(f"tiene un descuento del 10% su total a pagar es de {des}")
 else:
-    print("No se sabe")
+    print("No tiene descuento")
+print("Ejercicio #7")
+
+
+
+
+
+
