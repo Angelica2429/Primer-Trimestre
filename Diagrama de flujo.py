@@ -19,26 +19,26 @@
 # else:
 #     print("Pagas 18 euros")
 
-print("Ejercicio 3")
-print("Suma = s")
-print("Resta =  r")
-print("Multiplicación = m")
-print("División = d")
+# print("Ejercicio 3")
+# print("Suma = s")
+# print("Resta =  r")
+# print("Multiplicación = m")
+# print("División = d")
  
-num1=int(input("Ingrese un número:"))
-num2=int(input("Ingrese otro número:"))
-Opera=input("Ingrese la letra de la operación que desea realzar:").lower()
-if Opera == "s":
-    result1=num1+num2
-    print(f"Su resultado de la suma fue: {result1}")
-elif Opera == "r":
-    result2=num1-num2
-    print(f"Su resultado de la resta fue: {result2}")
-elif Opera == "m":
-    result3=num1*num2
-    print(f"Su resultado de la multiplicación fue: {result3}")
-elif Opera == "d":
-    result4=num1//num2
-    print(f"Su resultado de la división fue: {result4}")
-else:
-    print("La operación no es valida")
+# num1=int(input("Ingrese un número:"))
+# num2=int(input("Ingrese otro número:"))
+# Opera=input("Ingrese la letra de la operación que desea realzar:").lower()
+# if Opera == "s":
+#     result1=num1+num2
+#     print(f"Su resultado de la suma fue: {result1}")
+# elif Opera == "r":
+#     result2=num1-num2
+#     print(f"Su resultado de la resta fue: {result2}")
+# elif Opera == "m":
+#     result3=num1*num2
+#     print(f"Su resultado de la multiplicación fue: {result3}")
+# elif Opera == "d":
+#     result4=num1//num2
+#     print(f"Su resultado de la división fue: {result4}")
+# else:
+#     print("La operación no es valida")

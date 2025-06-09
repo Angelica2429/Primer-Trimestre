@@ -48,11 +48,11 @@
 # print("Ejercicio #6")
 # produc1=int(input("Ingrese el precio del primer producto:"))
 # produc2=int(input("Ingrese el precio del segundo número:"))
-# precio_total=produc1+produc2
-# porce=10                                             #establezco o pregunto el porcentaje,luego hago una operacion para sacar el dewscuento del precio final
-# if precio_total >= 100:                              #es poner el precio final luego eso lo divido por 100 que seria el porcentaje final y por ultimo ese resultado lo multiplico por el porcentaje del descuento
-#     des=precio_total/100*porce
-#     print(f"tiene un descuento del 10% su descuento es de {des}")
+# suma=produc1+produc2                        #Se suman los valores, si se cumple la condición se saca el 10% que seria con la formula de 
+# if suma >= 100:                             #la suma * 10 (o el porcentaje) y eso se lo divide entre 100 al final el total que de,se lo resta con la suma de los valores
+#     des=suma * 10 / 100 
+#     total=suma-des
+#     print(f"tiene un descuento del 10% y el valor a pagar es {total}")
 # else:
 #     print("No tiene descuento")
 
@@ -74,30 +74,41 @@
 
 # print("Ejercicio #9")
 # num10=int(input("Ingrese un número:"))
-# multi=(5*(num10//5))-(3*(num10//3)) 
-# if  multi==0:
+# if  num10 % 3 == 0 and num10 % 5 ==0:
 #     print("El número es multiplo del 5 y al 3")
+# elif num10 % 3 == 0:
+#     print("El número es multiplo del 3")
+# elif num10 % 5 == 0:
+#     print("El número es multiplo de 5")
 # else:
-# #     print("El número no es multiplo del 5 o 3")
+# #     print("El número no es multiplo ni de 5 o 3")
 # print("Ejercicio #10")
-# num11=int(input("Ingrese un número:"))
-# num12=int(input("Ingrese un número:"))
-# multi2=(num12*(num11//2))-(num11*(num11//2))
-# if  multi2==0:
-#     print("El número es divisible entre dos")
+# num11=int(input("Ingrese un número a dividir:"))
+# num12=int(input("Ingrese un número divisor:"))                     #Si cuando se usa % con un número es 0 aplica como divisible o multiplo
+# num13=int(input("Ingrese otro número divisor:"))
+# if num11% num12==0 and num11% num13 == 0:
+#     print(f"{num11} es divisible entre {num12} y {num13}")
+# elif num11% num12 ==0:
+#     print(f"{num11} es solo divisible entre {num12}")
+# elif num11 % num13 == 0:
+#     print(f"{num11} es solo divisible entre {num13}")
 # else:
-#     print("El número no es divisible entre dos")
+#     print(f"{num11} no es divisible entre {num12} ni {num13}")
 
-# # print("Ejercicio #11")
+# # # print("Ejercicio #11")
 # lista1=[]
-# lista1=int(input("Ingrese un número:")),int(input("Ingrese un número:")),int(input("Ingrese un número:")),int(input("Ingrese un número:")),int(input("Ingrese un número:"))
+# lista1.append(int(input("Ingrese un número:")))
+# lista1.append(int(input("Ingrese un número:")))
+# lista1.append(int(input("Ingrese un número:")))
+# lista1.append(int(input("Ingrese un número:")))
+# lista1.append(int(input("Ingrese un número:")))
 # print(lista1)
 # if lista1[2] < 10:
-#     print(f"{lista [2]} es menor a 10")
+#     print(f"{lista1 [2]} es menor a 10")
 # else:
-#     print(f"{lista [2]} es mayor a 10")
+#     print(f"{lista1 [2]} es mayor a 10")
 
-# print("Ejercicio #12")
+# # print("Ejercicio #12")
 # lista2=[3,5,7,9]
 # if lista2[2] == 7:
 #     print(f"la lista tiene {lista[2]}")
@@ -121,10 +132,15 @@
 
 # print("Ejercicio #15")
 # lista5=[]
-# lista5=input("Ingrese un color:"),input("Ingrese un color:"),input("Ingrese un color:").lower()
-# if lista5[1]=="azul":
-#     n=lista5.([1])
-#     a=lista5[1].append(input("Ingrese el nuevo color:"))
+# lista5.append(input("Ingrese un color:"))
+# lista5.append(input("Ingrese un color:"))
+# lista5.append(input("Ingrese un color:"))
+# if lista5[1].lower()=="azul":
+#     lista5[1]=(input("Ingrese el nuevo color:"))
 #     print(f"El nueva lista actualizada quedó así:{lista5}")
 # else:
 #     print("No es necesario cambiar el color")
+
+print("Ejercicio #16")
+
+
