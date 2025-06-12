@@ -108,12 +108,18 @@
 # else:
 #     print(f"{lista1 [2]} es mayor a 10")
 
-# # print("Ejercicio #12")
+# print("Ejercicio #12")
 # lista2=[3,5,7,9]
-# if lista2[2] == 7:
-#     print(f"la lista tiene {lista[2]}")
+# if lista2[0] == 7:
+#     print("La lista si tiene 7")
+# elif lista2[1] == 7:
+#     print("La lista si tiene 7")
+# elif lista2[2] == 7:
+#     print("La lista si tiene 7")
+# elif lista2[3] == 7:
+#     print("La lista si tiene 7")
 # else:
-#     print("El número no tiene 7")
+#     print("La lista no tiene 7")
 
 # print("Ejercicio #13")
 # lista3=[4,6,2,8]
@@ -139,8 +145,73 @@
 #     lista5[1]=(input("Ingrese el nuevo color:"))
 #     print(f"El nueva lista actualizada quedó así:{lista5}")
 # else:
-#     print("No es necesario cambiar el color")
+#     print("No es necesario cambiar el color") 
 
-print("Ejercicio #16")
+# print("Ejercicio #16")
+# tup0=(5,8,12,20)
+# if tup0[0]<tup0[3]:
+#     print("Orden ascendente")
+# else:
+#     print("Orden decendente")
 
+# print("Ejercicio #17")
+# tup0_1=(25,32,28)
+# if tup0_1[1]>= 30:
+#     print("Edad mayor a 30")
+# else:
+#     print("Edad menor a 30")
 
+# # print("Ejercicio #18")
+# tup1=(1,2,3)
+# if tup1[1]==2:
+#     lista1=list(tup1)
+#     lista1[1]=10
+#     tup1=tuple(lista1)
+#     print(f"La actualización quedo así {tup1}")
+# else:
+#     print(f"No es necesario cambiar la tupla")
+
+# print("Ejercicio #21")
+# info={'nombre':'Juan','Edad':17}
+# valor_de_edad=info['Edad']
+# valor_de_nombre=info['nombre']
+# if valor_de_edad>=18:
+#     print(f"{valor_de_nombre} es mayor de edad, teniendo {valor_de_edad} años")
+# else:
+#     print(f"{valor_de_nombre} es menor de edad, teniendo {valor_de_edad} años")
+    
+# print("Ejercicio #22")
+# info={'nombre':'Lucia','Edad':20}
+# ed=info['Edad']
+# nom=info['nombre']
+# if ed>18:
+#     info['Edad']=21
+#     ed=info['Edad']
+#     print(f"La edad de {nom} ahora es {ed}")
+# else:
+# #     print(f"No es necesario cambiar la edad de {nom}")
+
+    
+# # print("Ejercicio #23")
+# dato={'nombre':'Lucia'}
+# if 'ciudad' in dato:
+#     print("No es necesario agragarle clave")
+# else:
+#     dato['ciudad']='Bogotá'
+#     print(dato)
+
+# print("Ejercicio #24")
+# productos={'producto':'pan','precio':'1200'}
+# if 'precio' in productos:
+#     prec=productos['precio']
+#     print(f"El {producto} tiene precio y es de {prec}")
+# # else:
+# #     print(f"El {producto} no tiene precio")
+
+# print("Ejercicio #25")
+# products={'pan':'1200','leche':'2000'}
+# if 'pan' in products:
+#     precio=products['pan']
+#     print(f"el precio del producto es de {precio} ")
+# else:
+#     print("Producto no disponible")
