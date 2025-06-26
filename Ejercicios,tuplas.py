@@ -1,0 +1,66 @@
+print("Sistema de números")
+print("Este programa requiere que ingrese 10 números y con ellos se le mostrará:")
+print("1-Los números ingresados")
+print("2-los números originales y su doble")
+print("3-La suma total de los números y sus dobles")
+print("4-El promedio de los números")
+print("5-El doble del resultado de la suma")
+print("6-La mitad del promedio")
+print("7-El total")
+
+num1=int(input("Ingrese el primer número:"))
+num2=int(input("Ingrese el segundo número:"))
+num3=int(input("Ingrese el tercer número:"))
+num4=int(input("Ingrese el cuarto número:"))
+num5=int(input("Ingrese el quinto número:"))
+num6=int(input("Ingrese el sexto número:"))
+num7=int(input("Ingrese el septimo número:"))
+num8=int(input("ingrese el octavo número:"))
+num9=int(input("ingrese el noveno número:"))
+num10=int(input("Ingrese el decimo número:"))
+
+print(num1)
+print(num2)
+print(num3)
+print(num4)
+print(num5)
+print(num6)
+print(num7)
+print(num8)
+print(num9)
+print(num10)
+
+lista11=[num1,num2,num3,num4,num4,num5,num6,num7,num8,num9,num10]
+print(lista11)
+
+tup1=(num1,num1**2)
+tup2=(num2,num2**2)
+tup3=(num3,num3**2)
+tup4=(num4,num4**2)
+tup5=(num5,num5**2)
+tup6=(num6,num6**2)
+tup7=(num7,num7**2)
+tup8=(num8,num8**2)
+tup9=(num9,num9**2)
+tup10=(num10,num10**2)
+
+print(tup1)
+print(tup2)
+print(tup3)
+print(tup4)
+print(tup5)
+print(tup6)
+print(tup7)
+print(tup8)
+print(tup9)
+print(tup10)
+
+lista2=[tup1,tup2,tup3,tup4,tup5,tup6,tup7,tup8,tup9,tup10]
+operacion=num1+num2+num3+num4+num4+num5+num6+num6+num7+num8+num9+num10
+promedio=operacion/10
+doble=promedio*2
+mitad=promedio/2
+print(f"la suma de los números fue de",operacion)
+print(f"El promedio fue de",promedio)
+print(f"El doble del promedio es de",doble)
+print(f"La mitad del promedio fue:",mitad)
