@@ -37,17 +37,17 @@
 #       print(f"{numero} es impar")
 #    numero+=1
 
-print("Ejercicio # 5")
-notas=[]
-print("Si desea saber el promedio ingrese (promediar)")
-nota1=input("Ingrese una nota de 0 a 5 o promediar :")
-while nota1.lower() != "promediar":
-    notas.append(nota1)
-    nota1=input("Ingrese una nota de 0 a 5 o promediar:")
-    notas=list(map(float, notas))
-    cant=len(notas)
-    suma=sum(notas)
-    result=suma/cant
+# print("Ejercicio # 5")
+# notas=[]
+# print("Si desea saber el promedio ingrese (promediar)")
+# nota1=input("Ingrese una nota de 0 a 5 o promediar :")
+# while nota1.lower() != "promediar":
+#     notas.append(nota1)
+#     nota1=input("Ingrese una nota de 0 a 5 o promediar:")
+#     notas=list(map(float, notas))
+#     cant=len(notas)
+#     suma=sum(notas)
+#     result=suma/cant
         
 # print(f"Sus notas fueron {notas} y su promedio fue de {result}")      
 
@@ -140,17 +140,26 @@ while nota1.lower() != "promediar":
 #             break
 #     except:
 #         print("Ingresa números enteros, vuelve a intentarlo")
-print("Ejercicio # 13")    
-pot1=int(input("Ingrese el número al que "))
-while pot1 != "salir":
-
-print("Ejercicio # 14")
-while True:
-    n1=int("Ingresa un número entero:")
-    n2=int("Ingresa un número entero:")
-    n3=int("Ingresa un número entero:")
-    n4=int("Ingresa un número entero:")
-    n5=int("Ingresa un número entero:")
+print("Ejercicio # 13") 
+cont=0   
+pot1=int(input("Ingrese el número al que deseas saber sus potencias: "))
+while cont <= 5:
+    cont=cont+1
+    while pot1 != "salir":
+        try:
+            proce=pot1**cont
+            print(f"{pot1}**{cont}={proce}")
+            print(f"Acabas de ver las potencias del 1 al 5 de {pot1}")
+            pot1=int(input("Ingrese el número al que deseas saber sus potencias: "))
+        except:
+            print("Solo se puede ver hasta el número 5")
+# print("Ejercicio # 14")
+# while True:
+#     n1=int("Ingresa un número entero:")
+#     n2=int("Ingresa un número entero:")
+#     n3=int("Ingresa un número entero:")
+#     n4=int("Ingresa un número entero:")
+#     n5=int("Ingresa un número entero:")
 
     
 
