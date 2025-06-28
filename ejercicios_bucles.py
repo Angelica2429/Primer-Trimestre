@@ -37,17 +37,17 @@
 #       print(f"{numero} es impar")
 #    numero+=1
 
-# print("Ejercicio # 5")
-# notas=[]
-# print("Si desea saber el promedio ingrese (promediar)")
-# nota1=input("Ingrese una nota de 0 a 5 o promediar :")
-# while nota1.lower() != "promediar":
-#     notas.append(nota1)
-#     nota1=input("Ingrese una nota de 0 a 5 o promediar:")
-#     notas=list(map(float, notas))
-#     cant=len(notas)
-#     suma=sum(notas)
-#     result=suma/cant
+print("Ejercicio # 5")
+notas=[]
+print("Si desea saber el promedio ingrese (promediar)")
+nota1=input("Ingrese una nota de 0 a 5 o promediar :")
+while nota1.lower() != "promediar":
+    notas.append(nota1)
+    nota1=input("Ingrese una nota de 0 a 5 o promediar:")
+    notas=list(map(float, notas))
+    cant=len(notas)
+    suma=sum(notas)
+    result=suma/cant
         
 # print(f"Sus notas fueron {notas} y su promedio fue de {result}")      
 
@@ -65,10 +65,18 @@
 #    conteo =input("Desea ver otra tabla (si/no):")
    
 # print("Ejercicio # 7")
-# adi_num=64
+# import random
+# eleccion = range(200)
+# adiv_num = random.choice(eleccion)
 # while True:
-#     try:
-
+#     nume= int(input("Adivine el número: "))
+#     if nume == adiv_num:
+#         print("Correcto,adivinaste el número.")
+#         break
+#     elif nume < adiv_num: 
+#         print("Demasiado bajo, intenta de nuevo.")
+#     else:
+#         print("Demasiado alto, intenta de nuevo.")
 
 # print("Ejercicio # 8")
 # while True:
@@ -77,7 +85,19 @@
 #     if fruta.lower() in tupla:
 #      print("Correcto adivinaste una fruta")
 #      break
+# print("Ejercicio # 11")  
+# nom_ed={}
+# clave=input("Ingrese el valor de la clave")
 
+# print("Ejercicio # 9")
+# dic={"limon":"lemon","pera":"pear","piña":"pineapple","mango":"mango","uva":"grape"}
+# palabra=input("Ingrese la fruta que deseas traducir o (ingresa la palabra salir para terminar el programa):")
+
+# while True:
+#    if palabra == "salir":
+#       print("Has salido del programa")
+#       break
+#    elif palabra=="limon"
 
 # print("Ejercicio # 10")
 
@@ -120,4 +140,17 @@
 #             break
 #     except:
 #         print("Ingresa números enteros, vuelve a intentarlo")
-                     
+print("Ejercicio # 13")    
+pot1=int(input("Ingrese el número al que "))
+while pot1 != "salir":
+
+print("Ejercicio # 14")
+while True:
+    n1=int("Ingresa un número entero:")
+    n2=int("Ingresa un número entero:")
+    n3=int("Ingresa un número entero:")
+    n4=int("Ingresa un número entero:")
+    n5=int("Ingresa un número entero:")
+
+    
+
