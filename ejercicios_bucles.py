@@ -61,22 +61,25 @@
 #       resul=tabla*conteo
 #       print(f"{tabla}x{conteo}={resul}")
 #       conteo += 1
-#    print(f"Acabas de ver la tabla del {tabla}")
+#    print(f"Acabas de ver la tabla del {tabla}") 
 #    conteo =input("Desea ver otra tabla (si/no):")
    
 # print("Ejercicio # 7")
 # import random
-# eleccion = range(200)
+# eleccion = range(100)
 # adiv_num = random.choice(eleccion)
+# contador=1
 # while True:
-#     nume= int(input("Adivine el número: "))
+#     nume= int(input("Adivine el número:"))
 #     if nume == adiv_num:
 #         print("Correcto,adivinaste el número.")
 #         break
 #     elif nume < adiv_num: 
-#         print("Demasiado bajo, intenta de nuevo.")
+#         print("El número es mayor, intenta de nuevo.")
 #     else:
-#         print("Demasiado alto, intenta de nuevo.")
+#         print("El número es menor, intenta de nuevo.")
+#     contador=contador+1
+# print(f"Lo conseguiste con {contador} intentos")
 
 # print("Ejercicio # 8")
 # while True:
@@ -92,15 +95,15 @@
 # print("Ejercicio # 9")
 # dic={"limon":"lemon","pera":"pear","piña":"pineapple","mango":"mango","uva":"grape"}
 # palabra=input("Ingrese la fruta que deseas traducir o (ingresa la palabra salir para terminar el programa):")
-
-# while True:
-#    if palabra == "salir":
-#       print("Has salido del programa")
-#       break
-#    elif palabra=="limon"
+# while palabra.lower() != "salir":
+#     if palabra in dic:
+#         print(f"La traducción de {palabra} es {dic[palabra]}.")
+#     else:
+#         print(f"{palabra} no está disponible aún, intentelo de nuevo.")
+#     palabra=input("Ingrese la fruta que deseas traducir o (ingresa la palabra salir para terminar el programa):")
+# print("Ha salido del programa")
 
 # print("Ejercicio # 10")
-
 # while True:
 #     try:
 #      print("1-Suma")
@@ -140,26 +143,63 @@
 #             break
 #     except:
 #         print("Ingresa números enteros, vuelve a intentarlo")
-print("Ejercicio # 13") 
-cont=0   
-pot1=int(input("Ingrese el número al que deseas saber sus potencias: "))
-while cont <= 5:
-    cont=cont+1
-    while pot1 != "salir":
-        try:
-            proce=pot1**cont
-            print(f"{pot1}**{cont}={proce}")
-            print(f"Acabas de ver las potencias del 1 al 5 de {pot1}")
-            pot1=int(input("Ingrese el número al que deseas saber sus potencias: "))
-        except:
-            print("Solo se puede ver hasta el número 5")
-# print("Ejercicio # 14")
-# while True:
-#     n1=int("Ingresa un número entero:")
-#     n2=int("Ingresa un número entero:")
-#     n3=int("Ingresa un número entero:")
-#     n4=int("Ingresa un número entero:")
-#     n5=int("Ingresa un número entero:")
+print("Ejercicio # 11") 
+personas = {}
+while True:
+    nombre = input("Escribe un nombre (o 'salir' para terminar): ")
+    if nombre == "salir":
+        break
+    edad = input(f"Escribe la edad de {nombre}:")
+    personas[nombre] = edad
+
+print("El diccionario de las personas es:")
+print(personas)
+
+print("Ejercicio # 12") 
+colores = ["rojo", "azul", "verde", "amarillo", "naranja"]
+color =input("Ingrese un color y si desea salir ingrese (salir):")
+while color != "salir":
+    if color in colores:
+        print(f"El color {color} está en la lista")
+    else:
+        print("El color no está en la lista. Intenta otra vez.")
+    color =input("Ingrese un color y si desea salir ingrese (salir):")
+print("Has salido del programa")
+
+# print("Ejercicio # 13") 
+cont="si"
+while cont.lower() == "si":
+   pote=int(input("Ingrese el nuúmero que desea ver sus potencias:"))
+   cont=1
+   
+   while cont <=5:
+      resul=pote**cont
+      print(f"{pote}**{cont}={resul}")
+      cont += 1
+   print(f"Acabas de ver las potencias del {pote}") 
+   cont =input("Desea ver otras potencias (si/no):")
+print("Has salido del programa")
+    
+print("Ejercicio # 14")
+cuadrados = []
+contador = 0
+while contador < 5:
+    numero = int(input("Escribe un número: "))
+    cuadrados.append(numero * numero)
+    contador += 1
+print(f"Los cuadrados son:{cuadrados}")
+print("Ejercicio # 15")
+estudiantes = {}
+while True:
+    nombre = input("Nombre del estudiante (escribe 'fin' para terminar): ")
+    if nombre == "fin":
+        break
+    nota =float(input(f"Nota final de {nombre}:"))
+    estudiantes[nombre] = nota
+
+print("lista de estudiantes y sus notas:")
+print(estudiantes)
+
 
     
 
